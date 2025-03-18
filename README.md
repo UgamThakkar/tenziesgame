@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Tenzies Game - React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple implementation of the Tenzies game using React. The goal of the game is to roll dice and try to get all of them to show the same number. You can lock dice in place as you roll, and the game ends when all the dice show the same value. This project is built to help beginners learn and practice React concepts like state management, event handling, and conditional rendering.
 
-## Available Scripts
+## Game overview
 
-In the project directory, you can run:
+You start with 10 dice rolled at random.
+You can "hold" a die by clicking on it, which will prevent it from being rolled in the next turn.
+The goal is to get all the dice to show the same value.
+The game ends when all 10 dice are the same value.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Roll Dice: The dice will roll to random values unless they are held.
+Hold Dice: Clicking on a die will toggle its "held" state, preventing it from being rolled again.
+Game Completion: The game ends when all dice are the same value and locked in place.
+Start New Game: After completing a game, you can start a new game by clicking the roll button.
+Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used 
 
-### `npm test`
+React: JavaScript library for building user interfaces.
+useState and useEffect: React hooks for managing state and side effects.
+CSS: For styling the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Play
 
-### `npm run build`
+Roll Dice: When the game starts, 10 dice will be rolled randomly.
+Hold Dice: Click on a die to hold it in place. You can hold as many dice as you like.
+Re-roll: Click on the "Roll" button to re-roll the dice that are not held.
+Winning: The game ends when all dice are the same number. When this happens, the game will display a "Congratulations" message.
+Start New Game: After winning, you can start a new game by clicking the "Roll" button.
+ 
+## How to Contribute
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fork the repository
+Create a new branch (git checkout -b feature-name)
+Make your changes and commit them (git commit -m 'Add some feature')
+Push to the branch (git push origin feature-name)
+Open a pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)
